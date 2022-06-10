@@ -51,3 +51,13 @@
 ```
 🛠 xml, java, android studio
 ```
+&nbsp;
+&nbsp;
+
+
+📺  시연 영상
+
+---
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/59546979/173131576-a72a7708-f002-48e3-8c04-0630a96f1679.gif"/>
+</p>
