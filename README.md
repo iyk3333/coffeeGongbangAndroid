@@ -61,3 +61,7 @@
 <p align="center">
  <img src="https://user-images.githubusercontent.com/59546979/173131576-a72a7708-f002-48e3-8c04-0630a96f1679.gif"/>
 </p>
+<br/>
+<br/>
+
+✅ 자세한 설명: https://fluorescent-cornet-5b7.notion.site/Coffe-Gongbang-7b96909fc9fd4c86a1ced17ce764e87a
