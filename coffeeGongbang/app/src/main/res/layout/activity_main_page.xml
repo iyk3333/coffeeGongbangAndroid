@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/total_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#46721A00"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/map"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="160dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/icon_map" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="오늘의 커피"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/double_layout"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/location"
+                            android:layout_width="70dp"
+                            android:layout_height="53dp"
+                            android:gravity="top"
+                            android:paddingTop="15dp"
+                            android:text="서울특별시"
+                            android:textColor="#ffffff" />
+
+                        <ImageView
+                            android:id="@+id/weather"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/question"/>
+
+                        <TextView
+                            android:id="@+id/weather_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+
+                            android:layout_marginTop="15dp"
+                            android:textSize="14dp"
+                            android:textColor="#FFFFFF"
+                            android:text="날씨" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_todaycoffee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/todaycoffee_img"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp" />
+
+                            <TextView
+                                android:id="@+id/todaycoffee_name"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15dp"
+                                android:text="할리스커피\n티라미수라떼" />
+
+                        </LinearLayout>
+                        <Button
+                            android:id="@+id/main_shortWeather"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/todaycoffee"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center"
+                            android:text="상세 보기"
+                            android:textColor="#bb721A00" />
+                        //현재 기온, 서울 기준인거 명시
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mycoffee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/todaycoffee"
+                android:elevation="5dp">
+
+                <Button
+                    android:id="@+id/mycoffee_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="right"
+                    android:text="더보기"
+                    android:textColor="#bb721A00"
+                    android:background="@drawable/todaycoffee"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:id="@+id/todaybutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="나만의 커피"
+                    android:textColor="#888888"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_marginTop="00dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation = "horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/mycoffee_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/image_radius"/>
+
+                    <TextView
+                        android:id="@+id/mycoffee_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:text="할리스커피\n티라미수라떼"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/layout_mine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="00dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/todaycoffee"
+                android:elevation="5dp">
+
+                <TableRow>
+                    <ImageButton
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:background="#eeeeee"
+                        android:scaleType="centerInside"
+                        android:id="@+id/hollys"
+                        android:src="@drawable/hollys_logo" />
+                    <ImageButton
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="#eeeeee"
+                        android:scaleType="centerInside"
+                        android:id="@+id/starbucks"
+                        android:src="@drawable/starbucks_logo"/>
+                </TableRow>
+                <TableRow>
+                    <ImageButton
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#eeeeee"
+                        android:scaleType="centerInside"
+                        android:id="@+id/twosome"
+                        android:src="@drawable/twosome_logo" />
+                    <ImageButton
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="#eeeeee"
+                        android:scaleType="centerInside"
+                        android:id="@+id/tomntoms"
+                        android:src="@drawable/tomntoms_logo" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
